@@ -24,7 +24,7 @@ public class ClsCalculadora {
         this.operando = operando;
     }
 
-    public ClsCalculadora(double Valor1) {
+    public ClsCalculadora(double Valor1,String operando) {
         this.valor1 = Valor1;
     }
 
@@ -59,6 +59,25 @@ public class ClsCalculadora {
 
         }
         return 0;
+    }
+    
+    public double operaciones2(double valor1, double valor2, String operando) {
+
+        
+                double resultado = valor1 / valor2;
+                nomOperacion = "Division";
+                return resultado;
+                
+            
+    }
+    public double operaciones3(double valor1, String operando) {
+
+        
+                double resultado = Math.sqrt(valor1);
+                nomOperacion = "Raiz Cuadrada";
+                return resultado;
+                
+            
     }
     
 }
